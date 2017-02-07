@@ -1,0 +1,72 @@
+{
+  "name": "mymusic",
+  "version": "1.0.0",
+  "keywords": [
+    "h5"
+  ],
+  "license": "MIT",
+  "_": [],
+  "description": "mymusic/h5",
+  "namespace": "h5",
+  "scripts": {
+    "start": "babel-node tools/run start",
+    "new": "babel-node tools/run new",
+    "deploy": "babel-node tools/run deploy"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.0",
+    "axios": "^0.15.3",
+    "babel-cli": "^6.18.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-preset-stage-3": "^6.22.0",
+    "babel-runtime": "^6.22.0",
+    "bluebird": "^3.4.7",
+    "css-loader": "^0.26.1",
+    "del": "^2.2.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "fs-extra": "^2.0.0",
+    "globby": "^6.1.0",
+    "handlebars": "^4.0.6",
+    "handlebars-loader": "^1.4.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.26.0",
+    "inquirer": "^3.0.1",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "minimist": "^1.2.0",
+    "ncp": "^2.0.0",
+    "portfinder": "^1.0.12",
+    "postcss-bem": "^0.4.1",
+    "postcss-loader": "^0.13.0",
+    "postcss-px2rem": "^0.3.0",
+    "postcss-salad": "^1.0.8",
+    "px2remless-loader": "^0.1.8",
+    "qs": "^6.3.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "vue": "^2.1.10",
+    "vue-hot-reload-api": "^1.3.3",
+    "vue-loader": "^10.0.2",
+    "vue-style-loader": "^1.0.0",
+    "vue-template-compiler": "^2.1.10",
+    "vuex": "^2.1.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "vue": "^2.1.10"
+  },
+  "proConfig": {
+    "cdn-url": "",
+    "upload-cdn-url": ""
+  }
+}
