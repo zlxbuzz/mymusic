@@ -65,7 +65,7 @@ export function getLoaders(px2remConfig, includePath, name) {
       loader: "html"
     },
     {
-      test  : /\.(ttf|eot|svg)$/,
+      test  : /\.(ttf|eot|svg|woff(2)?)(\?.*)?$/,
       loader: "url?limit=100000"
     },
     {

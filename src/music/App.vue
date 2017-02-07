@@ -16,13 +16,14 @@
     <bz-header></bz-header>
     <bz-body :data="lists"></bz-body>
     <bz-play></bz-play>
-    <audio autoplay="autoplay" :src="getSong" controls="controls"></audio>
   </div>
 </template>
 
 <script>
   import bzHeader from './components/bz/header.vue'
   import bzBody from './components/bz/body.vue'
+  import bzPlay from './components/bz/play.vue'
+
   import {mapActions,mapGetters} from 'vuex'
   export default {
     data () {
@@ -45,6 +46,7 @@
     },
     components : {
         bzHeader,
+        bzPlay,
         bzBody
     }
   }

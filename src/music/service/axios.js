@@ -4,8 +4,7 @@ import qs from 'qs'
 
 
 axios.defaults.timeout = 5000;
-// axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
-axios.defaults.headers.common['Content-Type'] = 'application/json';
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
 //开源的代理
 axios.defaults.baseURL = 'https://bird.ioliu.cn/v1';
 
@@ -16,7 +15,6 @@ axios.interceptors.request.use((config) => {
   }
   return config;
 },(error) =>{
-   console.log("错误的传参");
   return Promise.reject(error);
 });
 
@@ -26,7 +24,6 @@ axios.interceptors.response.use((res) =>{
   }
   return Promise.resolve(res.data);
 }, (error) => {
-  console.log("网络异常");
   return Promise.reject(error);
 });
 

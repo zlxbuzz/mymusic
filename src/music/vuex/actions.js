@@ -15,7 +15,6 @@ export const newList = ({ commit }) => {
       }
     })
     .then((response) => {
-        // commit(types.LOGIN,response.data.data); //获得的数据通过mutation，存入store中
         resolve(response);
     })
     .catch((error) => {
