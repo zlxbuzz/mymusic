@@ -4,13 +4,14 @@ export const newList = ({ commit }) => {
   return new Promise((resolve, reject)=> {
     axios({
       method:'get',
-      url: 'v1/restserver/ting',
+      url: '?url=http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.billboard.billList&format=json&type=1&offset=0&size=5',
       params: {
-        method:`baidu.ting.billboard.billList`,
-        format:`json`,
-        type:1,
-        offset:0,
-        size : 5
+        // method:`baidu.ting.billboard.billList`,
+        // format:`json`,
+        // type:1,
+        // offset:0,
+        // size : 5
+        // url:`http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.billboard.billList&format=json&type=1&offset=0&size=5`
       }
     })
     .then((response) => {
@@ -25,10 +26,11 @@ export const play = ({ commit },songid) => {
   return new Promise((resolve, reject)=> {
     axios({
       method:'get',
-      url: 'v1/restserver/ting',
+      // url: 'v1/restserver/ting',
+      url: '?url=http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.song.play&songid='+songid,
       params: {
-        method:`baidu.ting.song.play`,
-        songid:songid
+        // method:`baidu.ting.song.play`,
+        // songid:songid
       }
     })
     .then((response) => {
