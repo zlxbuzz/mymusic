@@ -62,11 +62,11 @@ async function server(options) {
       hot           : true,
       noInfo        : false,
       proxy         : {
-        // '/v1#<{(|'        : {
-        //   target      : "http://tingapi.ting.baidu.com/", //special proxy domain example
-        //   changeOrigin: true,
-        //   secure      : false
-        // },
+        '/v1/*'        : {
+          target      : "https://bird.ioliu.cn/", //special proxy domain example
+          changeOrigin: true,
+          secure      : false
+        },
       }
     }).listen(port, '0.0.0.0', function (err) {
       if (err) console.log(err)

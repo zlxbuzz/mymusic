@@ -1,12 +1,19 @@
 <style>
-
+    .fix-overflow-scrolling{
+      margin-top:-100px;
+      padding-top:100px;
+      height:100%;
+      -webkit-overflow-scrolling:touch;
+      overflow:auto;
+    }
   .footer {
     border  : 1px solid darkcyan; /*no*/
     padding : 20px;
   }
 
-  .hl {
-    color : #00aeff;
+  .app {
+      height:100%;
+      width:100%;
   }
 
 </style>
@@ -28,7 +35,7 @@
   export default {
     data () {
       return {
-          lists:[]
+          lists:[],
       }
     },
     computed:{

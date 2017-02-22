@@ -90,14 +90,18 @@ export function getModule(px2remConfig) {
       },
       postcss: function () {
         return [
-            require('postcss-bem')({
+            require('postcss-salad')({
+              browsers: ['ie > 8', 'last 2 versions'],
+              features: {
+                'bem': {
                   'shortcuts': {
                     'component': 'b',
                     'modifier': 'm',
                     'descendent': 'e'
                   },
+                }
+              }
             }),
-            require('autoprefixer'),
             require('postcss-px2rem')(px2remConfig)
           ];
       },
